@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+</head>
+<body>
+
+<h1>Payment Page</h1>
+
+<form id="paymentForm">
+    <label for="amount">Enter Amount:</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+    <!-- You can customize the payment button as needed -->
+    <button type="button" onclick="paymentStart()">Make Payment</button>
+</form>
+
+<script>
+    function processPayment() {
+        // You can add your payment processing logic here
+        // For a simple demonstration, let's alert the entered amount
+        var amount = document.getElementById('amount').value;
+        alert('Processing payment for amount: ' + amount);
+    }
+</script>
+
+</body>
+</html>
